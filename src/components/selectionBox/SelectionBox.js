@@ -9,10 +9,12 @@ const SelectionBox = (props) => {
       id={"selectionBox" + props.id}
     >
       <img className="selectionBox--image" alt={props.answer.imageAlt} src={props.answer.image} />
-      <input className="selectionBox--checkbox" type="checkbox" />
-      <span className="selectionBox--text">{props.answer.text}</span>
+      <div className='selectionBox--checkbox-text-container'>
+        <input className="selectionBox--checkbox" type="checkbox" />
+        <span className="selectionBox--text">{props.answer.text}</span>
+      </div>
     </div>
-   )
+  )
 }
 
 export default SelectionBox;
